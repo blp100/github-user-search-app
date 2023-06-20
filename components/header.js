@@ -12,6 +12,7 @@ const Header = () => {
   };
 
   console.log(themeCtx);
+  const Icon = themeCtx.isDarkTheme ? SunIcon : MoonIcon;
 
   return (
     <header className="flex justify-between">
@@ -20,13 +21,11 @@ const Header = () => {
       </Link>
       <button
         type="button"
-        className="text-h4 text-slate-400 hover:text-slate-600"
+        className="text-h4 flex items-center text-slate-400 hover:text-slate-600"
         onClick={toggleThemeHandler}
       >
-        <span className="inline-block pr-4 dark:hidden">DARK</span>
-        <MoonIcon className="inline-block fill-current dark:hidden" />
-        <span className="hidden pr-4 dark:inline-block">LIGHT</span>
-        <SunIcon className="hidden fill-current dark:inline-block" />
+        <span className="inline-block pr-4">{themeCtx.isDarkTheme ? "LIGHT" : "DARK"}</span>
+        <Icon className="inline-block fill-current" />
       </button>
     </header>
   );
