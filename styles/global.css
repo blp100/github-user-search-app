@@ -13,12 +13,24 @@ body {
 }
 @layer base{
   :root{
-    --color-bg-primary: #F6F8FF;
-    --color-text-primary: 50, 50, 50;
+    --color-bg-secondary: #F6F8FF;
+    --color-text-primary: #2B3442;
+    --color-text-secondary: #4B6A9B;
+    --color-text-tertiary:#697C9A;
+    --color-link: #0079FF;
+    --color-bg-primary: #0079FF;
+    --color-bg-surface: #FEFEFE;
+    --color-text-contrast: #FFFFFF;
   }
   .dark {
-    --color-bg-primary: #141D2F;
-    --color-text-primary: 200, 200, 200;
+    --color-bg-secondary: #141D2F;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #FFFFFF;
+    --color-text-tertiary:#FFFFFF;
+    --color-link: #0079FF;
+    --color-bg-pprimary: #0079FF;
+    --color-bg-surface: #1E2A47;
+    --color-text-contrast: #FFFFFF;
   }
 }
 

@@ -29,7 +29,7 @@ const Layout = ({
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <main className="h-screen bg-primary">
+      <main className="h-screen bg-secondary">
         <header>
           <div className="h-fit">
             <button
