@@ -11,3 +11,14 @@ body {
 * {
   box-sizing: border-box;
 }
+@layer base{
+  :root{
+    --color-bg-primary: #F6F8FF;
+    --color-text-primary: 50, 50, 50;
+  }
+  .dark {
+    --color-bg-primary: #141D2F;
+    --color-text-primary: 200, 200, 200;
+  }
+}
+
