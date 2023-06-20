@@ -4,7 +4,7 @@ const Page = () => {
   return (
     <Layout>
       <div>
-        <div className="bg-primary text-contrast m-auto my-10 block w-fit rounded-md p-4 font-mono text-4xl font-bold text-slate-600">
+        <div className="m-auto my-10 block w-fit rounded-md bg-primary p-4 font-mono text-4xl font-bold text-contrast">
           Hello
         </div>
       </div>

@@ -17,6 +17,7 @@ body {
     --color-text-primary: #2B3442;
     --color-text-secondary: #4B6A9B;
     --color-text-tertiary:#697C9A;
+    --color-logo: #222731;
     --color-link: #0079FF;
     --color-bg-primary: #0079FF;
     --color-bg-surface: #FEFEFE;
@@ -27,6 +28,7 @@ body {
     --color-text-primary: #FFFFFF;
     --color-text-secondary: #FFFFFF;
     --color-text-tertiary:#FFFFFF;
+    --color-logo: #FFFFFF;
     --color-link: #0079FF;
     --color-bg-pprimary: #0079FF;
     --color-bg-surface: #1E2A47;

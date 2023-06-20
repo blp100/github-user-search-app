@@ -16,6 +16,23 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontSize: {
+      "logo-size": [
+        "1.625rem",
+        {
+          lineHeight: "2.438rem",
+          fontWeight: "700",
+        },
+      ],
+      "h4": [
+        "0.813rem",
+        {
+          lineHeight: "1.25rem",
+          fontWeight: "400",
+          letterSpacing: '0.156em',
+        },
+      ],
+    },
     extend: {
       fontFamily: {
         mono: ["var(--font-space-mono)"],
@@ -26,6 +43,7 @@ module.exports = {
         tertiary: "var(--color-text-tertiary)",
         contrast: "var(--color-text-contrast)",
         link: "var(--color-link)",
+        logo: "var(--color-logo)",
       },
       backgroundColor: {
         primary: "var(--color-bg-primary)",

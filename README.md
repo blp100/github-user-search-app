@@ -5,6 +5,8 @@ https://javascript.plainenglish.io/how-to-implement-dark-light-themes-in-a-next-
 Dark Mode
 https://bitspeicher.blog/dark-mode-tailwindcss/
 
+SVG icon with tailwind css
+https://www.youtube.com/watch?v=MbUyHQRq2go
 
 # Frontend Mentor - GitHub user search app
 
