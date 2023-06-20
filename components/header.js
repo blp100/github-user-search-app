@@ -11,7 +11,6 @@ const Header = () => {
     themeCtx.toggleThemeHandler();
   };
 
-  console.log(themeCtx);
   const Icon = themeCtx.isDarkTheme ? SunIcon : MoonIcon;
 
   return (
@@ -21,7 +20,7 @@ const Header = () => {
       </Link>
       <button
         type="button"
-        className="text-h4 flex items-center text-slate-400 hover:text-slate-600"
+        className={`text-h4 flex items-center text-tertiary hover:${themeCtx.isDarkTheme?"text-[#90A4D4]" :"text-logo"}`}
         onClick={toggleThemeHandler}
       >
         <span className="inline-block pr-4">{themeCtx.isDarkTheme ? "LIGHT" : "DARK"}</span>

@@ -24,14 +24,17 @@ module.exports = {
           fontWeight: "700",
         },
       ],
-      "h4": [
+      h4: [
         "0.813rem",
         {
           lineHeight: "1.25rem",
           fontWeight: "400",
-          letterSpacing: '0.156em',
+          letterSpacing: "0.156em",
         },
       ],
+    },
+    borderRadius: {
+      normal: "0.938rem",
     },
     extend: {
       fontFamily: {
@@ -49,6 +52,9 @@ module.exports = {
         primary: "var(--color-bg-primary)",
         secondary: "var(--color-bg-secondary)",
         surface: "var(--color-bg-surface)",
+      },
+      boxShadow: {
+        normal: "0px 16px 30px -10px rgba(70, 96, 187, 0.198567)",
       },
     },
   },
