@@ -23,7 +23,7 @@ const SearchBar = () => {
         placeholder="Search GitHub username…"
       ></input>
       <button
-        className="md:text-h3 md:font-bold md:mr-2.5 md:px-6 mr-2 rounded-small bg-primary px-4 py-[0.781rem] text-[14px]/[21px] text-contrast"
+        className="mr-2 rounded-small bg-primary px-4 py-[0.781rem] text-[14px]/[21px] text-contrast md:mr-2.5 md:px-6 md:text-h3 md:font-bold"
         type="submit"
       >
         Search

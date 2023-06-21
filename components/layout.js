@@ -24,7 +24,7 @@ const Layout = ({
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="font-mono h-screen bg-secondary">
+      <div className="h-screen bg-secondary font-mono">
         <div className="mx-auto max-w-[327px] pt-8 md:max-w-[573px] lg:max-w-[730px]">
           <Header />
           <SearchBar />

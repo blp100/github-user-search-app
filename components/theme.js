@@ -5,7 +5,7 @@ const ThemeContext = createContext({
   toggleThemeHandler: () => {},
 });
 
-export const ThemeContextProvider = ({children}) => {
+export const ThemeContextProvider = ({ children }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
   useEffect(() => initialThemeHandler());
 
@@ -49,4 +49,4 @@ export const ThemeContextProvider = ({children}) => {
   );
 };
 
-export default ThemeContext
+export default ThemeContext;
