@@ -18,7 +18,7 @@ const SearchBar = () => {
     >
       <SearchIcon className="ml-4 fill-current md:ml-8" />
       <input
-        className="ml-2 flex-grow bg-inherit text-[13px]/[25px] outline-none placeholder:text-secondary md:ml-6 md:text-[18px]/[25px]"
+        className="ml-2 flex-grow bg-inherit text-[13px]/[25px] text-secondary outline-none placeholder:text-secondary md:ml-6 md:text-[18px]/[25px]"
         type="text"
         placeholder="Search GitHub username…"
       ></input>
