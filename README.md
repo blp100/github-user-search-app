@@ -6,7 +6,7 @@ Dark Mode
 https://bitspeicher.blog/dark-mode-tailwindcss/
 
 SVG icon with tailwind css
-https://www.youtube.com/watch?v=MbUyHQRq2go
+https://stackoverflow.com/questions/65676689/next-js-how-can-i-change-the-color-of-svg-in-next-image
 
 # Frontend Mentor - GitHub user search app
 

@@ -12,6 +12,8 @@ const Header = () => {
   };
 
   const Icon = themeCtx.isDarkTheme ? SunIcon : MoonIcon;
+  const hoverColor = themeCtx.isDarkTheme?"hover:text-[#90A4D4]" :"hover:text-logo";
+  const themeText = themeCtx.isDarkTheme ? "LIGHT" : "DARK";
 
   return (
     <header className="flex justify-between">
@@ -20,10 +22,10 @@ const Header = () => {
       </Link>
       <button
         type="button"
-        className={`text-h4 flex items-center text-tertiary hover:${themeCtx.isDarkTheme?"text-[#90A4D4]" :"text-logo"}`}
+        className={"text-h4 flex items-center text-tertiary " + hoverColor}
         onClick={toggleThemeHandler}
       >
-        <span className="inline-block pr-4">{themeCtx.isDarkTheme ? "LIGHT" : "DARK"}</span>
+        <span className="inline-block pr-4">{themeText}</span>
         <Icon className="inline-block fill-current" />
       </button>
     </header>
