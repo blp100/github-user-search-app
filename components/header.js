@@ -12,7 +12,9 @@ const Header = () => {
   };
 
   const Icon = themeCtx.isDarkTheme ? SunIcon : MoonIcon;
-  const hoverColor = themeCtx.isDarkTheme?"hover:text-[#90A4D4]" :"hover:text-logo";
+  const hoverColor = themeCtx.isDarkTheme
+    ? "hover:text-[#90A4D4]"
+    : "hover:text-logo";
   const themeText = themeCtx.isDarkTheme ? "LIGHT" : "DARK";
 
   return (
@@ -22,7 +24,10 @@ const Header = () => {
       </Link>
       <button
         type="button"
-        className={"text-h4 flex items-center text-tertiary " + hoverColor}
+        className={
+          "flex items-center text-h4 tracking-[0.156em] text-tertiary " +
+          hoverColor
+        }
         onClick={toggleThemeHandler}
       >
         <span className="inline-block pr-4">{themeText}</span>
