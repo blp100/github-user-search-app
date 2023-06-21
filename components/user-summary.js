@@ -6,11 +6,10 @@ import TwitterIcon from "../public/images/icon-twitter.svg";
 import CompanyIcon from "../public/images/icon-company.svg";
 
 const UserSummary = (props) => {
-  const { styles, ...otherChildren } = props;
+  const { searchName, onError, ...otherChildren } = props;
   const themeCtx = useContext(ThemeContext);
-
   const [userData, setUserData] = useState({});
-  const userName = "octocat";
+  const userName = searchName;
 
   const {
     avatar_url,
@@ -37,6 +36,10 @@ const UserSummary = (props) => {
         method: "GET",
         redirect: "follow",
       });
+      if(response.status==404){
+        onError();
+        return;
+      }
       if (response.ok) {
         const data = await response.json();
         setUserData(data);
