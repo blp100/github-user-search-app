@@ -1,13 +1,17 @@
 import Layout from "../components/layout";
+import SearchBar from "../components/search-bar";
+import UserSummary from "../components/user-summary";
 
 const Page = () => {
+
+  const handleSearch = (e)=>{
+
+  }
+
   return (
     <Layout>
-      <div>
-        <div className="m-auto my-10 block w-fit rounded-md bg-primary p-4 font-mono text-4xl font-bold text-contrast">
-          Hello
-        </div>
-      </div>
+      <SearchBar />
+      <UserSummary />
     </Layout>
   );
 };

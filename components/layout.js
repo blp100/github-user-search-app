@@ -3,7 +3,6 @@ import Head from "next/head";
 import { Space_Mono } from "next/font/google";
 import Header from "./header";
 import Footer from "./footer";
-import SearchBar from "./search-bar";
 
 const space_mono = Space_Mono({
   weight: ["400", "700"],
@@ -23,11 +22,11 @@ const Layout = ({
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/images/favicon-32x32.png" sizes="any" />
       </Head>
-      <div className="h-screen bg-secondary font-mono">
+      <div className="min-h-screen h-full bg-secondary font-mono">
         <div className="mx-auto max-w-[327px] pt-8 md:max-w-[573px] lg:max-w-[730px]">
           <Header />
-          <SearchBar />
           {children}
           <Footer />
         </div>

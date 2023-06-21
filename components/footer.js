@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="text-center text-tertiary text-h4">
+    <footer className="text-center text-tertiary text-h4 mt-8">
       Challenge by&nbsp;
       <Link className="text-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">
         Frontend Mentor

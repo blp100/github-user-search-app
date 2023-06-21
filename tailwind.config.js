@@ -28,7 +28,7 @@ module.exports = {
         "1.625rem",
         {
           lineHeight: "2.375rem",
-          fontWeight: "400",
+          fontWeight: "700",
         },
       ],
       h2: [
@@ -52,10 +52,13 @@ module.exports = {
           fontWeight: "400",
         },
       ],
-    },
-    borderRadius: {
-      normal: "0.938rem",
-      small: "0.625rem",
+      normal:[
+        "0.938rem",
+        {
+          lineHeight: "1.563rem",
+          fontWeight: "400",
+        },
+      ]
     },
     extend: {
       fontFamily: {
