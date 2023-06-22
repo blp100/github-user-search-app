@@ -54,7 +54,7 @@ const UserSummary = (props) => {
   const day = date.toLocaleDateString("en-GB", options);
   const biography = bio ? bio : "This profile has no bio";
   const websiteLink =
-    blog != "" && !blog.startsWith("http://") && !blog.startsWith("https://")
+    !!blog && !blog.startsWith("http://") && !blog.startsWith("https://")
       ? "http://" + blog
       : blog;
 
