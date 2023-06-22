@@ -72,11 +72,11 @@ const UserSummary = (props) => {
         <p className="block text-h4/[1.188rem] text-tertiary md:mt-1 md:text-normal">
           {"Joined " + day}
         </p>
-        <p className="mt-8 hidden h-[4.688rem] text-h4/[1.563rem] text-secondary md:h-[3.125rem] md:text-normal lg:order-1 lg:col-span-2 lg:block">
+        <p className="mt-8 hidden text-h4/[1.563rem] text-secondary md:h-[3.125rem] md:text-normal lg:order-1 lg:col-span-2 lg:block">
           {biography}
         </p>
       </div>
-      <p className="mt-8 h-[4.688rem] text-h4/[1.563rem] text-secondary md:h-[3.125rem] md:text-normal lg:hidden">
+      <p className="mt-8 text-h4/[1.563rem] text-secondary md:h-[3.125rem] md:text-normal lg:hidden">
         {biography}
       </p>
       <div className="mt-6 grid grid-cols-3 rounded-[0.625rem] bg-secondary px-4 py-[1.125rem] text-center md:mt-8 md:px-8 md:py-4 md:text-left lg:ml-[9.25rem]">
