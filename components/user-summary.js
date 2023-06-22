@@ -80,7 +80,11 @@ const UserSummary = (props) => {
           {biography}
         </p>
       </div>
-      <p className="mt-8 text-h4/[1.563rem] text-secondary md:h-[3.125rem] md:text-normal lg:hidden">
+      <p
+        className={`mt-8 text-h4/[1.563rem] text-secondary md:h-[3.125rem] md:text-normal lg:hidden ${
+          !bio && "opacity-75"
+        }`}
+      >
         {biography}
       </p>
       <div className="mt-6 grid grid-cols-3 rounded-[0.625rem] bg-secondary px-4 py-[1.125rem] text-center md:mt-8 md:px-8 md:py-4 md:text-left lg:ml-[9.25rem]">
@@ -154,7 +158,14 @@ const UserSummary = (props) => {
           }`}
         >
           <CompanyIcon className="min-w-max fill-current" />
-          <p className="ml-3">{company ? company : "Not Available"}</p>
+          <a
+            className="ml-3"
+            href={
+              !!company ? "https://github.com/" + company.substring(1) : company
+            }
+          >
+            {company ? company.substring(1) : "Not Available"}
+          </a>
         </div>
       </div>
     </div>
