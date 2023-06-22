@@ -12,10 +12,9 @@ const SearchBar = (props) => {
   useEffect(() => {
     if (errorMessage === null) {
       setValue("No Result!");
-      console.log(errorMessage);
+      // console.log(errorMessage);
     }
   }, [errorMessage]);
-
 
   return (
     <form
@@ -25,14 +24,17 @@ const SearchBar = (props) => {
     >
       <SearchIcon className="ml-4 fill-current md:ml-8" />
       <input
-        className={`ml-2 flex-grow bg-inherit text-[13px]/[25px] text-secondary outline-none placeholder:text-secondary md:ml-6 md:text-[18px]/[25px] ${
-          textValue==="No Result!" && "text-[#F74646]"
+        className={`ml-2 flex-grow bg-inherit text-[13px]/[25px] outline-none placeholder:text-secondary md:ml-6 md:text-[18px]/[25px] ${
+          textValue === "No Result!" ? "text-[#F74646]" : "text-secondary"
         } }`}
         type="text"
         it="searchInfo"
         name="searchInfo"
         placeholder="Search GitHub username…"
         value={textValue}
+        onClick={(e) => {
+          if (textValue === "No Result!") setValue("");
+        }}
         onChange={(e) => {
           setValue(e.target.value);
         }}
