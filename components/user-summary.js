@@ -53,6 +53,10 @@ const UserSummary = (props) => {
   const options = { year: "numeric", month: "short", day: "numeric" };
   const day = date.toLocaleDateString("en-GB", options);
   const biography = bio ? bio : "This profile has no bio";
+  const websiteLink =
+    blog != "" && !blog.startsWith("http://") && !blog.startsWith("https://")
+      ? "http://" + blog
+      : blog;
 
   return (
     <div className="mt-4 rounded-[0.938rem] bg-surface px-6 pb-12 pt-8 shadow-normal dark:shadow-none md:mt-6 md:p-10 lg:p-12">
@@ -69,7 +73,7 @@ const UserSummary = (props) => {
         >
           {"@" + login}
         </a>
-        <p className="lg:text-right block text-h4/[1.188rem] text-tertiary md:mt-1 md:text-normal">
+        <p className="block text-h4/[1.188rem] text-tertiary md:mt-1 md:text-normal lg:text-right">
           {"Joined " + day}
         </p>
         <p className="mt-8 hidden text-h4/[1.563rem] text-secondary md:h-[3.125rem] md:text-normal lg:order-1 lg:col-span-2 lg:block">
@@ -111,15 +115,21 @@ const UserSummary = (props) => {
             !location && "opacity-50"
           }`}
         >
-          <LocationIcon className="fill-current" />
+          <LocationIcon className="min-w-max fill-current" />
           <p className="ml-3">{location ? location : "Not Available"}</p>
         </div>
         <div
-          className={`flex items-center md:order-3 ${!blog && "opacity-50"}`}
+          className={`flex items-center md:order-3 ${
+            !blog && "pointer-events-none opacity-50"
+          }`}
         >
-          <LinkIcon className="fill-current" />
-          <a className="ml-3" href={blog ? blog : "#"} target="_blank">
-            {blog ? blog : "Not Available"}
+          <LinkIcon className="min-w-max fill-current" />
+          <a
+            className="ml-3"
+            href={websiteLink ? websiteLink : "#"}
+            target="_blank"
+          >
+            {websiteLink ? websiteLink : "Not Available"}
           </a>
         </div>
         <div
@@ -127,7 +137,7 @@ const UserSummary = (props) => {
             !twitter_username && "pointer-events-none opacity-50"
           }`}
         >
-          <TwitterIcon className="fill-current" />
+          <TwitterIcon className="min-w-max fill-current" />
           <a
             className="ml-3"
             href={
@@ -143,7 +153,7 @@ const UserSummary = (props) => {
             !company && "pointer-events-none opacity-50"
           }`}
         >
-          <CompanyIcon className="fill-current" />
+          <CompanyIcon className="min-w-max fill-current" />
           <p className="ml-3">{company ? company : "Not Available"}</p>
         </div>
       </div>
