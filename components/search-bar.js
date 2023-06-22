@@ -35,6 +35,9 @@ const SearchBar = (props) => {
         onClick={(e) => {
           if (textValue === "No Result!") setValue("");
         }}
+        onKeyDown={(e) => {
+          if (textValue === "No Result!") setValue("");
+        }}
         onChange={(e) => {
           setValue(e.target.value);
         }}
