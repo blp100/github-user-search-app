@@ -64,7 +64,7 @@ const UserSummary = (props) => {
         className="inline-block h-[70px] w-auto rounded-full md:h-[117px]"
         src={avatar_url}
       />
-      <div className="ml-5 inline-block align-middle md:ml-10 lg:ml-9 lg:mt-6 lg:inline-grid lg:w-[30rem] lg:grid-cols-2 lg:align-top">
+      <div className="ml-5 inline-block align-middle md:ml-10 lg:ml-9 lg:mt-0 lg:inline-grid lg:w-[30rem] lg:grid-cols-2 lg:align-top">
         <h1 className="text-h3 font-bold text-primary md:text-h1">{name}</h1>
         <a
           className="order-1 inline-block text-h4/[1.188rem] text-link md:mt-0.5 md:text-h3"
